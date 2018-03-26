@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Image Display Test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="test.css">
+    <script type="text/javascript">
+
+    function showImage1(){
+        document.getElementById('loadingImage1').style.display="inline-block";	
+        document.getElementById('loadingImage2').style.display="none";	
+        document.getElementById('loadingImage3').style.display="none";	
+        document.getElementById('loadingImage4').style.display="none";	
+    }
+    function showImage2(){
+        document.getElementById('loadingImage1').style.display="none";	
+        document.getElementById('loadingImage2').style.display="inline-block";	
+        document.getElementById('loadingImage3').style.display="none";	
+        document.getElementById('loadingImage4').style.display="none";
+    }
+	 function showImage3(){
+        document.getElementById('loadingImage1').style.display="none";	
+        document.getElementById('loadingImage2').style.display="none";	
+        document.getElementById('loadingImage3').style.display="inline-block";	
+        document.getElementById('loadingImage4').style.display="none";
+    }
+	 function showImage4(){
+        document.getElementById('loadingImage1').style.display="none";	
+        document.getElementById('loadingImage2').style.display="none";	
+        document.getElementById('loadingImage3').style.display="none";	
+        document.getElementById('loadingImage4').style.display="inline-block";
+    }
+
+
+    </script>
+    </head>
+<body class="bg">
+<div class="form-style-5">
+
+<fieldset>
+<legend><span class="number">1</span>Display Images</legend>
+<div id="outer">
+<div class="imgwrap">
+    <img id="loadingImage1" src="black.jpeg" />
+    <img id="loadingImage2" src="gold.jpeg"/>
+    <img id="loadingImage3" src="blue.jpeg"/>
+    <img id="loadingImage4" src="rose-gold.jpeg"/>
+</div>
+
+<input type="button" class="btn" value="Black" onclick="showImage1();"></input>
+<input type="button" class="btn" value="Gold" onclick="showImage2();"></input>
+<input type="button" class="btn" value="Blue" onclick="showImage3();"></input>
+<input type="button" class="btn" value="Rose gold" onclick="showImage4();"></input>
+  
+</div>
+</div>
+</fieldset>
+</div>
+</body>
+
+
+
+
